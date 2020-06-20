@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Press+Start+2P&display=swap');
+
+body{
+	background-color: #0C090A;
+	text-align: justify-all;
+}
+
+.Main{
+	margin:auto;
+	width: 50%;
+	
+	font-family: 'Inconsolata', monospace;
+	font-size: 16px;
+	color: #ABEBC6;
+	text-align: justify-all;
+
+}
+
+a{
+	text-decoration: none;
+	color: #1569C7;
+
+}
+
+h1{
+	text-align: center;
+	font-family: san serif;
+	/*font-weight: 10px;*/
+	text-decoration-style: all;
+	margin: 50px 0px ;
+	background-position: center;
+	color: #C0C0C0;
+	text-align: justify-all;
+
+}
+
+.Main ul{
+	list-style: square;
+}
+
+.Main li{
+	padding-bottom: 20px;
+}
+.container{
+	position: relative;
+}
+
+.img-right { float:right; margin: 5px; 
+
+/*max-height: 200px;*/
+width: 600px;
+height: 270px;
+position: relative;}
+
+.mySlides {display: none;}
+
+.im-text {
+  display: flex
+  background-color: #0C090A;
+  color: #f2f2f2;
+  font-size: 15px;
+  padding-left: 40%;
+  top: 250px;
+  left: 50%;
+  /*bottom: 90%;*/
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .im-text {font-size: 11px}
+}
+
+.end{
+	font-style: italic;
+	bottom: 0;
+	left: 27%;
+	position: fixed;
+	text-align: center;
+}
+
+}

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+   <SCRIPT type="text/javascript">
+  function JavaBlink() {
+     var blinks = document.getElementsByTagName('JavaBlink');
+     for (var i = blinks.length - 1; i >= 0; i--) {
+        var s = blinks[i];
+        s.style.visibility = (s.style.visibility === 'visible') ? 'hidden' : 'visible';
+     }
+     window.setTimeout(JavaBlink, 1000);
+  }
+  if (document.addEventListener) document.addEventListener("DOMContentLoaded", JavaBlink, false);
+  else if (window.addEventListener) window.addEventListener("load", JavaBlink, false);
+  else if (window.attachEvent) window.attachEvent("onload", JavaBlink);
+  else window.onload = JavaBlink;
+</SCRIPT>
+<title>Asha S.R.</title>
+  <body class = "Main">
+    <header>
+       <!--<meta name="viewport" content="width=device-width, initial-scale=1" />-->
+      <h1>
+        Hi, I'm Asha Sankar Ramalaxmi.<JavaBlink>|</JavaBlink>
+      </h1>
+      
+      
+    </header>
+    <link rel="stylesheet" type="text/css" href="Styles.css">
+    <main>
+       <!--<img src="asha.png" width="117px" height="137px" class = "img-right">-->
+       <div class="container">
+       <div class="mySlides fade">
+       <img src="pic1.png" class="img-right">
+          <div class="im-text">Teaching Basic Electronics to Highschool girls</div>
+       </div>
+
+       <div class="mySlides fade">
+       <img src="pic2.png" class="img-right">
+          <div class="im-text">Minneapolis <3</div>
+       </div>
+
+       <div class="mySlides fade">
+       <img src="pic3.png" class="img-right">
+          <div class="im-text">With CVN Lab at SFN 2019</div>
+       </div>
+
+       <div class="mySlides fade">
+       <img src="pic4.png" class="img-right">
+          <div class="im-text">BCI Internship at NTU, SG</div>
+       </div>
+     </div>
+     <ul>
+      <li>Jack of many trades, Master of Science (BME) at <a href="https://twin-cities.umn.edu/">UMN</a>.</li>
+      <li>The world amazes me! I'd like to solve interesting and difficult problems. </br> As a result, my skills span from electrical - electronics engineering to human neuroimaging (fMRI) and vision science.</li>
+      <li>I currently work as a Research Assistant at the <a href="http://cvnlab.net/home.shtml">CVN Lab,</a> CMRR. 
+      <ul>
+        <li>More specifically analysing <a href="http://naturalscenesdataset.org/"> NSD</a>, Natural Scenes Dataset. </li>    
+      </ul>
+      <li>I am based in Minneapolis.</li>
+      <li>You can find my CV <a href="Asha Sankar Ramalaxmi.docx" download = "CV_AshaSankarRamalaxmi.doc">here</a>.</li>
+      <li>I <a href="https://medium.com/me/stories/public">write random articles here</a>.</li>
+      <li>Feel free to connect with me in <a href="https://www.linkedin.com/in/asha-sr/">LinkedIn</a>.</li>
+      <li>My email is <a href = "mailto: ashamohana@gmail.com">ashamohana@gmail.com</a>.</li>
+    </ul>
+    <script>
+     var slideIndex = 0;
+     showSlides();
+
+     function showSlides() {
+       var i;
+       var slides = document.getElementsByClassName("mySlides");
+       for (i = 0; i < slides.length; i++) {
+         slides[i].style.display = "none";  
+       }
+       slideIndex++;
+       if (slideIndex > slides.length) {slideIndex = 1}    
+       slides[slideIndex-1].style.display = "block";  
+      setTimeout(showSlides, 3500); // Change image every 2 seconds
+      }
+    </script>
+    <div class="end">
+    <p>Website design inspired from <a href="https://muan.co/">Mu-An</a></p>
+  </div>
+  </body>
+ 
+
+</html>
+
